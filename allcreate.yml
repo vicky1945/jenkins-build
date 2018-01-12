@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create a file
+    command: touch reo1
+    register: b
+  - debug:
+      var: b.stdout_lines
