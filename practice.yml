@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Integration testing
+      command: cat /etc/ansible
+      register: a
