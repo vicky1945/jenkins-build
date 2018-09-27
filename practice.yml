@@ -2,5 +2,7 @@
 - hosts: localhost
   tasks:
     - name: Integration testing
-      command: cat /etc/ansible
+      command: cat /etc/ansible/hosts
       register: a
+    - debug:
+        var: a.stdout_lines
