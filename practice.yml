@@ -6,3 +6,8 @@
       register: a
     - debug:
         var: a.stdout_lines
+    - name: testing
+      command: cat /root/aws-vpc
+      register: b
+    - debug:
+        var: b.stdout_lines
