@@ -7,7 +7,7 @@
     - debug:
         var: a.stdout_lines
     - name: testing
-      command: cat /root/aws-vpc
+      command: ls -ltr
       register: b
     - debug:
         var: b.stdout_lines
