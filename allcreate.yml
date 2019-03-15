@@ -1,6 +1,6 @@
----
-- hosts: localhost
-  tasks:
+#---
+#- hosts: localhost
+#  tasks:
   - name: create a file
     command: touch reo1
     register: a
