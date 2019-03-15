@@ -3,6 +3,6 @@
 #  tasks:
   - name: create a file
     command: touch reo1
-    register: a
+    register: d
   - debug:
-      var: a.stdout_lines
+      var: d.stdout_lines
